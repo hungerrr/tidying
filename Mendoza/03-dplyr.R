@@ -43,3 +43,4 @@ flights <- mutate(flights, speed = distance / air_hours)
 flight_speed <- filter(flights, air_time > 60, dep_delay < 120 )
 # Make a scatterplot of depl_delay vs speed
 ggplot(data = flight_speed) + geom_point(mapping = aes(x = dep_delay, y = speed))
+
