@@ -20,4 +20,6 @@ flight_speed <-
 
 ggplot(flight_speed) + geom_histogram(mapping = aes(x=speed), bins = 100)
 
-ggplot(flight_speed) + geom_boxplot(mapping = aes(x=name, y=speed)) + theme(axis.text.x = element_text(angle=90))
+ggplot(flight_speed) + 
+  geom_boxplot(mapping = aes(x=name, y=speed)) + 
+  theme(axis.text.x = element_text(angle=90))
